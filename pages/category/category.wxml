@@ -1,0 +1,10 @@
+<!--pages/category/category.wxml-->
+<view class="main">
+    <scroll-view class="category-left"scroll-y="true">
+        <view class="catelist"wx:for="{{category}}"wx:key="{{item.id}}"data-id="{{item.id}}"
+        data-index="{{index}}">
+            <text>{{item.name}}</text>
+        </view>
+    </scroll-view>
+    <view class="category-right"></view>
+</view>
